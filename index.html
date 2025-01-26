@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinit's - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(12, 5, 73);
+        color: rgb(251, 251, 251);
+        font-family: "Merriweather", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(25, 5, 104);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 35px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: aquamarine;
+        font-size: 1.09rem;
+      }
+      .left {
+        font-size: 1.2rem;
+        position: static;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 120px 0;
+        align-items: center;
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: 48%;
+      }
+
+      .leftSection {
+        font-size: 2.5rem;
+        margin: 10px 5%;
+      }
+
+      .leftSection .btn {
+        padding: 15px 15px;
+        margin: 35px 0;
+        background-color: rgb(15, 7, 50);
+        color: aliceblue;
+        border: 2px solid white;
+        border-radius: 25px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 600px;
+        margin: 1px 10%;
+      }
+
+      .purple {
+        color: rgb(142, 57, 221);
+      }
+      .text-gray {
+        color: antiquewhite;
+        font-size: small;
+      }
+      #element {
+        color: rgb(148, 57, 233);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 800px;
+      }
+      .secondSection h1 {
+        font-size: 1.7rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 110px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0px 150px;
+      }
+      .image-top {
+        width: 160px;
+        position: relative;
+        top: -99px;
+        left: -80px;
+      }
+      .image-logo {
+        width: 15px;
+        position: relative;
+        top: -136px;
+        left: -8px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: -42px;
+        width: max-content;
+        left: -65px;
+        font-size: small;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: -25px;
+        color: gray;
+        font-size: 15px;
+        left: -95px;
+        margin: 15px;
+        width: 250px;
+        height: 150px;
+      }
+
+      footer {
+        background-color: rgb(25, 5, 104);
+        height: 180px;
+      }
+      .footer {
+        display: flex;
+        padding: 50px 125px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 150px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Vinit's Personal Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, I Am <span class="purple">Vinit</span>
+          <div>I AM A DEVELOPER &</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">GitHub Profile</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="newside.png" alt="" />
+        </div>
+      </section>
+      <section class="secondSection">
+        <span class="text-gray">What I Have Learnt So Far...</span>
+        <h1>Programming Languages</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="logo.png" alt="" />
+            <img class="image-logo" src="html.png" alt="" />
+            <div class="vertical-title">HTML (Jan23-Mar23)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              doloremque ullam autem et. Maiores laudantium molestias ratione
+              dicta velit delectus at voluptatibus totam labore commodi.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="logo.png" alt="" />
+            <img class="image-logo" src="css.png" alt="" />
+            <div class="vertical-title">CSS (Apr23-June23)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              doloremque ullam autem et. Maiores laudantium molestias ratione
+              dicta velit delectus at voluptatibus totam labore commodi.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="logo.png" alt="" />
+            <img class="image-logo" src="js.png" alt="" />
+            <div class="vertical-title">JavaScript (July23-Aug23)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              doloremque ullam autem et. Maiores laudantium molestias ratione
+              dicta velit delectus at voluptatibus totam labore commodi.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="logo.png" alt="" />
+            <img class="image-logo" src="react.png" alt="" />
+            <div class="vertical-title">React (Sep23-Dec23)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              doloremque ullam autem et. Maiores laudantium molestias ratione
+              dicta velit delectus at voluptatibus totam labore commodi.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="logo.png" alt="" />
+            <img class="image-logo" src="java.png" alt="" />
+            <div class="vertical-title">JAVA (Jan24-Mar24)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              doloremque ullam autem et. Maiores laudantium molestias ratione
+              dicta velit delectus at voluptatibus totam labore commodi.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Vinit's Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyrights &copy; vinitsportfolio.com | All Rights Reserved &trade;;
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [" GAMER", " TRAVELLER", "GYMRAT"],
+        typeSpeed: 200,
+        loop: Infinity,
+      });
+    </script>
+  </body>
+</html>
